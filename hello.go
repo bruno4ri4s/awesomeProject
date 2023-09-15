@@ -6,6 +6,25 @@ import (
 	"rsc.io/quote"
 )
 
+const PI = 3.14
+
+const (
+	x = 100
+	y = 0b1010 // binario
+	z = 0o12   // Octal
+	w = 0xFF   // Hexadecimal
+)
+
+const (
+	Domingo = iota + 1
+	Lunes
+	Martes
+	Miercoles
+	Jueves
+	Viernes
+	Sabado
+)
+
 func main() {
 	fmt.Println("Hola Mundo")
 	fmt.Println(quote.Hello())
@@ -29,5 +48,7 @@ func main() {
 	tel = 34231234
 
 	fmt.Println(" id: ", id, " nombre: ", firstName, " segundo nombre: ", middleName, " apellido: ", lastName, " edad: ", age, " telefono: ", tel)
+	fmt.Println(x, y, z, w)
+	fmt.Println(Viernes)
 
 }
